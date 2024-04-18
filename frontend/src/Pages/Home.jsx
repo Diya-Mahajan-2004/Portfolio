@@ -1,18 +1,13 @@
-import { useState } from "react";
-import Intro from "./Intro";
-import Navbar from "../Components/Navbar";
+import React from 'react'
+import Intro from './Intro'
+import Navbar from '../Components/Navbar'
 
 function Home() {
   return (
-    <>
-      <div className="min-h-screen overflow-hidden bg-[#72A0C1] ">
-        <Navbar />
-        <Intro />
-      </div>
-    </>
-  );
+    <div className='h-[800px] overflow-hidden bg-gradient-to-r from-[#2b5876] to-[#4e4376]'>
+        <Navbar/>
+        <Intro/></div>
+  )
 }
 
-export default Home;
-
-// {/*bg-gradient-to-r from-[#0d1826] via-[#2e5586]   to-[#5dafed]*/}
+export default Home
