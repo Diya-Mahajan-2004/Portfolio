@@ -4,7 +4,7 @@ import "../CSS/Intro.css";
 function Intro() {
   return (
     <div>
-      <div className=" justify-center align-middle text-center md:mt-64">
+      <div className=" justify-center align-middle text-center md:mt-52">
         <h1 className=" text-white md:text-[3rem]">
           Hi, I'm <span className="text-[#DAA520]">Diya Mahajan</span>{" "}
         </h1>
