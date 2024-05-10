@@ -1,11 +1,11 @@
-import React from 'react'
-import Intro from './Intro'
+import React from "react";
+import Intro from "./Intro";
 function Home() {
   return (
-    <div className='h-[750px] overflow-hidden bg-gradient-to-r from-[#b8cdff] to-[#003e53]'>
-    
-        <Intro/></div>
-  )
+    <div className="h-[750px] overflow-hidden bg-[#353940] ">
+      <Intro />
+    </div>
+  );
 }
 
-export default Home
+export default Home;
