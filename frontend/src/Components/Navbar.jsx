@@ -9,7 +9,7 @@ function Navbar() {
       <div className="block lg:hidden">
         <button
           onClick={() => setIsOpen(!isOpen)}
-          className="flex items-center px-4 py-2 rounded-full text-white focus:outline-none focus:ring-2 focus:ring-white"
+          className="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 flex items-center px-4 py-2 rounded-full text-white focus:outline-none focus:ring-2 focus:ring-white"
         >
           <svg
             className="fill-current h-6 w-6"
@@ -35,10 +35,10 @@ function Navbar() {
           isOpen ? "" : "hidden"
         }`}
       >
-        <div className="text-md lg:flex-grow font-semibold">
-          <NavLink href="#mednews" text="Home" />
-          <NavLink href="#appointments" text="About" />
-          <NavLink href="#ai-bot" text="Skills" />
+        <div className="text-md  lg:flex-grow font-semibold">
+          <NavLink href="#mednews" text="Home" className="mr-[50px]" />
+          <NavLink href="#appointments" text="About" className="mr-[60px]" />
+          <NavLink href="#ai-bot" text="Skills" className="mr-[70px]" />
           <NavLink href="#understandayuv" text="Project" />
         </div>
       </div>
@@ -49,10 +49,10 @@ function Navbar() {
   );
 }
 
-const NavLink = ({ href, text }) => (
+const NavLink = ({ href, text, className }) => (
   <a
     href={href}
-    className="block lg:inline-block lg:mt-0 text-white hover:text-[#DCCFED] px-4 py-2 transition duration-300 ease-in-out"
+    className={`block lg:inline-block lg:mt-0 text-white hover:text-[#DCCFED] px-4 py-2 transition duration-300 ease-in-out ${className}`}
   >
     {text}
   </a>

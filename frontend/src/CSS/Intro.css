@@ -1,0 +1,18 @@
+
+
+.intro-container {
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  .intro-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .intro-container.fade {
+    opacity: 0;
+  }
+  
