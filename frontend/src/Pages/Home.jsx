@@ -5,7 +5,7 @@ function Home() {
   return (
     <div>
       <Navbar/>
-    <div className="h-[750px] overflow-hidden bg-gradient-to-r from-[#331C52] to-[#291C3A]  ">
+    <div className="h-[660px] overflow-hidden bg-gradient-to-r from-[#331C52] to-[#291C3A]  ">
       
      
       <Intro />

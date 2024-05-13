@@ -42,7 +42,7 @@ function Navbar() {
           <NavLink href="#understandayuv" text="Project" />
         </div>
       </div>
-      <button className="text-[#8121D0] bg-white border-white border-4 py-1 px-6 rounded-full mt-0 mr-8 hover:bg-[#291C3A] hover:text-white">
+      <button className="text-[#291C3A] font-bold bg-white border-white border-4 py-1 px-6 rounded-md mt-0 mr-8 hover:bg-[#291C3A] hover:text-white">
         Hire Me
       </button>
     </nav>
