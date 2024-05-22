@@ -36,10 +36,26 @@ function Navbar() {
         }`}
       >
         <div className="text-md  lg:flex-grow font-semibold">
-          <NavLink href="#home" text="Home" className="mr-[50px] hover:text-slate-800 hover:bg-[#ffffff] hover:bg-opacity-35 hover:py-[8px] hover:px-4 " />
-          <NavLink href="#about" text="About" className="mr-[60px] hover:text-slate-800 hover:bg-[#ffffff] hover:bg-opacity-35 hover:py-[8px] hover:px-4" />
-          <NavLink href="#skills" text="Skills" className="mr-[70px] hover:text-slate-800 hover:bg-[#ffffff] hover:bg-opacity-35 hover:py-[8px] hover:px-4" />
-          <NavLink href="#project" text="Project" className=" hover:text-slate-800 hover:bg-[#ffffff] hover:bg-opacity-35 hover:py-[8px] hover:px-4"  />
+          <NavLink
+            href="#home"
+            text="Home"
+            className="mr-[50px] hover:text-slate-800 hover:bg-[#ffffff] hover:bg-opacity-35 hover:py-[2px] hover:px-4 hover:rounded-lg "
+          />
+          <NavLink
+            href="#about"
+            text="About"
+            className="mr-[60px] hover:text-slate-800 hover:bg-[#ffffff] hover:bg-opacity-35 hover:py-[2px] hover:px-4 hover:rounded-lg"
+          />
+          <NavLink
+            href="#skills"
+            text="Skills"
+            className="mr-[70px] hover:text-slate-800 hover:bg-[#ffffff] hover:bg-opacity-35 hover:py-[2px] hover:px-4 hover:rounded-lg"
+          />
+          <NavLink
+            href="#project"
+            text="Project"
+            className=" hover:text-slate-800 hover:bg-[#ffffff] hover:bg-opacity-35 hover:py-[2px] hover:px-4 hover:rounded-lg"
+          />
         </div>
       </div>
       <button className="text-[#291C3A] font-bold bg-white border-white border-4 py-1 px-6 rounded-md mt-0 mr-8 hover:bg-[#291C3A] hover:text-white">
@@ -49,7 +65,7 @@ function Navbar() {
   );
 }
 
-const NavLink = ({ href, text, className }) => (  
+const NavLink = ({ href, text, className }) => (
   <a
     href={href}
     className={`block lg:inline-block lg:mt-0 text-white  px-4 py-2 transition duration-300 ease-in-out ${className}`}
