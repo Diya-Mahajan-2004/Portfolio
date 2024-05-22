@@ -1,12 +1,14 @@
-import React, { useState, useEffect, useRef } from "react";
-
-import "../CSS/Intro.css";
+import React from "react";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { CgProfile } from "react-icons/cg";
+import { FaXTwitter } from "react-icons/fa6";
 import Typewriter from "typewriter-effect";
+import { FaWhatsapp } from "react-icons/fa";
 
 function Intro() {
   return (
-    <div>
-      <div className="intro-content justify-center align-middle text-center md:mt-64  text-white md:text-[44px]">
+    <div className="relative h-screen flex flex-col justify-center items-center">
+      <div className="intro-content text-center text-white text-4xl md:text-4xl mb-24">
         <Typewriter
           options={{
             strings: [
@@ -18,6 +20,27 @@ function Intro() {
             loop: true,
           }}
         />
+      </div>
+      <div className="absolute bottom-8 right-8 flex flex-col items-center">
+        <div className="w-0.5 h-24 bg-white mb-4"></div>
+        <a href="https://github.com/Diya-Mahajan-2004">
+          {" "}
+          <FaGithub className="text-2xl text-white my-2" />
+        </a>
+        <a href="https://www.linkedin.com/in/diya-mahajan-11948b21b/">
+          {" "}
+          <FaLinkedin className="text-2xl text-white my-2" />
+        </a>
+
+        <a href="">
+          <CgProfile className="text-2xl text-white my-2" />
+        </a>
+        <a href="">
+          <FaXTwitter className="text-2xl text-white my-2" />
+        </a>
+        <a href="">
+          <FaWhatsapp className="text-2xl text-white my-2" />
+        </a>
       </div>
     </div>
   );
