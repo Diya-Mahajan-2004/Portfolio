@@ -52,7 +52,7 @@ function Navbar() {
 const NavLink = ({ href, text, className }) => (
   <a
     href={href}
-    className={`block lg:inline-block lg:mt-0 text-white hover:text-[#DCCFED] px-4 py-2 transition duration-300 ease-in-out ${className}`}
+    className={`block lg:inline-block lg:mt-0 text-white hover:text-[#e1d4f2] px-4 py-2 transition duration-300 ease-in-out ${className}`}
   >
     {text}
   </a>
