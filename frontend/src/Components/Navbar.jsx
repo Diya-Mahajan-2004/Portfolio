@@ -36,10 +36,10 @@ function Navbar() {
         }`}
       >
         <div className="text-md  lg:flex-grow font-semibold">
-          <NavLink href="#mednews" text="Home" className="mr-[50px]" />
-          <NavLink href="#appointments" text="About" className="mr-[60px]" />
-          <NavLink href="#ai-bot" text="Skills" className="mr-[70px]" />
-          <NavLink href="#understandayuv" text="Project" />
+          <NavLink href="#home" text="Home" className="mr-[50px]" />
+          <NavLink href="#about" text="About" className="mr-[60px]" />
+          <NavLink href="#skills" text="Skills" className="mr-[70px]" />
+          <NavLink href="#project" text="Project" />
         </div>
       </div>
       <button className="text-[#291C3A] font-bold bg-white border-white border-4 py-1 px-6 rounded-md mt-0 mr-8 hover:bg-[#291C3A] hover:text-white">
