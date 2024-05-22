@@ -1,12 +1,14 @@
 import React from "react";
 import Intro from "./Intro";
 import Navbar from "../Components/Navbar";
+import About from "./About";
 function Home() {
   return (
     <div>
       <Navbar />
-      <div className="h-[660px] overflow-hidden bg-gradient-to-r from-[#331C52] to-[#291C3A]  ">
+      <div className=" overflow-hidden bg-gradient-to-r from-[#272f42] to-[#212a40]  ">
         <Intro />
+        <About/>
       </div>
     </div>
   );
