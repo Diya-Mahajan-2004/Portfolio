@@ -8,7 +8,7 @@ function About() {
       <div className="container mx-auto px-4 flex flex-col items-center md:flex-row relative space-y-8 md:space-y-0 md:space-x-8">
         <div className="flex-shrink-0 relative">
           <img 
-            className=" w-64 h-64 md:w-64 md:h-64 lg:w-96 lg:h-96 rounded-full border-2 border-[#f1d243] shadow-2xl" 
+            className=" w-64 h-64 md:w-64 md:h-64 lg:w-96 lg:h-96 rounded-full border-1 border-[#f1d243] shadow-2xl" 
             src={PortfolioPic} 
             alt="About Me" 
           />
@@ -31,7 +31,7 @@ function About() {
             I am furthering my education in technology as a bachelor's student at{" "}
             <span className="font-semibold text-[#f1d243]">Symbiosis</span>.
           </p>
-          <button className="bg-[#d1b535] text-white py-3 px-6 rounded-full hover:bg-[#291C3A] hover:border-4 hover:border-[#d1b535] hover:text-[#d1b535] transition duration-300 font-montserrat">
+          <button className="bg-[#d1b535] text-white py-3 px-6 rounded-full hover:bg-[#272f42] hover:border-4 hover:border-[#d1b535] hover:text-[#d1b535] transition duration-300 font-montserrat">
             Contact Me
           </button>
         </div>

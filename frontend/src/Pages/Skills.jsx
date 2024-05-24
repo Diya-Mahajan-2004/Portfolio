@@ -9,8 +9,15 @@ function Skills() {
         </h1>
       </div>
       <div className=" grid grid-flow-row row-span-6 grid-rows-4">
-
-
+        <p>Javascript</p>
+        <p>React</p>
+        <p>Express.js</p>
+        <p>Node.js</p>
+        <p>HTML</p>
+        <p>CSS</p>
+        <p>Tailwind CSS</p>
+        <p>Python</p>
+        <p></p>
       </div>
     </div>
   );
