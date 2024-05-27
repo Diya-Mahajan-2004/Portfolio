@@ -7,7 +7,7 @@ import { FaWhatsapp } from "react-icons/fa";
 
 function Intro() {
   return (
-    <div className="relative h-screen flex flex-col justify-center items-center shadow-2xl mb-6">
+    <div className="relative h-screen flex flex-col justify-center items-center shadow-2xl ">
       <div className="intro-content text-center text-[#c5e5ff] text-4xl md:text-4xl mb-24">
         <Typewriter
           options={{
@@ -21,7 +21,7 @@ function Intro() {
           }}
         />
       </div>
-      <div className="absolute bottom-12 mb-10 right-8 flex flex-col items-center">
+      <div className="absolute bottom-12 mb-14 right-8 flex flex-col items-center">
         <div className="w-0.5 h-24 bg-white mb-4"></div>
         <a href="https://github.com/Diya-Mahajan-2004">
           {" "}
