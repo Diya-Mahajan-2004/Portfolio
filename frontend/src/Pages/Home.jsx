@@ -9,8 +9,7 @@ function Home() {
       <Navbar />
       <div className=" overflow-hidden bg-gradient-to-r from-[#272f42] to-[#212a40]  ">
         <Intro />
-        <About/>
-        <Skills/>
+        
       </div>
     </div>
   );
