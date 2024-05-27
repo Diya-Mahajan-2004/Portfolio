@@ -24,11 +24,11 @@ function Navbar() {
       </div>
       <div className="flex items-center flex-shrink-0">
         <img
-          className="rounded-full ml-4"
+          className="rounded-full ml-4 mix-blend-color-burn"
           src={logo}
           alt="Logo"
-          width="40"
-          height="40"
+          width="50"
+          height="50"
         />
       </div>
       <div
