@@ -43,18 +43,18 @@ function Navbar() {
             className="mr-[50px] hover:text-slate-800 hover:bg-[#ffffff] hover:bg-opacity-35 hover:py-[2px] hover:px-4 hover:rounded-lg "
           />
           <NavLink
-            href="#about"
+            href="/about"
             text="About"
             className="mr-[60px] hover:text-slate-800 hover:bg-[#ffffff] hover:bg-opacity-35 hover:py-[2px] hover:px-4 hover:rounded-lg"
           />
           <NavLink
-            href="#skills"
+            href="/skills"
             text="Skills"
             className="mr-[70px] hover:text-slate-800 hover:bg-[#ffffff] hover:bg-opacity-35 hover:py-[2px] hover:px-4 hover:rounded-lg"
           />
           <NavLink
-            href="#project"
-            text="Project"
+            href="/projects"
+            text="Projects"
             className=" hover:text-slate-800 hover:bg-[#ffffff] hover:bg-opacity-35 hover:py-[2px] hover:px-4 hover:rounded-lg"
           />
         </div>
