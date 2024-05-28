@@ -1,5 +1,6 @@
 import React from 'react';
 import { FaFlag, FaLaptopCode, FaTrophy, FaReact, FaBullseye, FaPalette } from 'react-icons/fa';
+import Navbar from "../Components/Navbar";
 
 function About() {
   const timelineEvents = [
@@ -48,7 +49,9 @@ function About() {
   ];
 
   return (
-    <div className="about-page p-10 bg-gradient-to-r from-[#3b4660] to-[#364468] text-white min-h-screen flex justify-center items-center">
+    <div>
+      <Navbar/>
+      <div className="about-page p-10 bg-gradient-to-r from-[#3b4660] to-[#364468] text-white min-h-screen flex justify-center items-center">
       <div className="max-w-lg">
         <h1 className="text-5xl mb-8 text-center font-bold">My Journey</h1>
         <div className="timeline relative">
@@ -67,6 +70,9 @@ function About() {
         </div>
       </div>
     </div>
+
+    </div>
+    
   );
 }
 

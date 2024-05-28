@@ -38,7 +38,7 @@ function Navbar() {
       >
         <div className="text-md  lg:flex-grow font-semibold">
           <NavLink
-            href="#home"
+            href="/"
             text="Home"
             className="mr-[50px] hover:text-slate-800 hover:bg-[#ffffff] hover:bg-opacity-35 hover:py-[2px] hover:px-4 hover:rounded-lg "
           />
