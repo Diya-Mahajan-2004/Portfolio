@@ -50,29 +50,27 @@ function About() {
 
   return (
     <div>
-      <Navbar/>
-      <div className="about-page p-10 bg-gradient-to-r from-[#3b4660] to-[#364468] text-white min-h-screen flex justify-center items-center">
-      <div className="max-w-lg">
-        <h1 className="text-5xl mb-8 text-center font-bold">My Journey</h1>
-        <div className="timeline relative">
-          {timelineEvents.map((event, index) => (
-            <div key={index} className="timeline-event flex items-start mb-8">
-              <div className="timeline-icon bg-white text-[#3b4660] rounded-full p-3 shadow-lg mr-4">
-                {event.icon}
+      <Navbar />
+      <div className="about-page p-10 bg-gradient-to-r from-[#0f0f0f] to-[#2b2b2b] text-[#ffffff] min-h-screen flex justify-center items-center">
+        <div className="max-w-lg">
+          <h1 className="text-5xl mb-8 text-center font-bold">My Journey</h1>
+          <div className="timeline relative">
+            {timelineEvents.map((event, index) => (
+              <div key={index} className="timeline-event flex items-start mb-8">
+                <div className="timeline-icon bg-white text-[#667EEA] rounded-full p-3 shadow-lg mr-4">
+                  {event.icon}
+                </div>
+                <div className="flex flex-col">
+                  <div className="timeline-date text-xl mb-2">{event.date}</div>
+                  <h2 className="text-xl mb-2 font-semibold">{event.title}</h2>
+                  <p>{event.description}</p>
+                </div>
               </div>
-              <div className="flex flex-col">
-                <div className="timeline-date text-xl mb-2">{event.date}</div>
-                <h2 className="text-xl mb-2 font-semibold">{event.title}</h2>
-                <p>{event.description}</p>
-              </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </div>
     </div>
-
-    </div>
-    
   );
 }
 
