@@ -5,7 +5,7 @@ function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="navbar flex items-center justify-between flex-wrap bg-[#BCD4E6] p-5 shadow-2xl">
+    <nav className="navbar flex items-center justify-between flex-wrap bg-[#1b232a] p-5 shadow-2xl">
 
       <div className="block lg:hidden">
         <button
