@@ -1,11 +1,11 @@
 import React from "react";
-import { FaGithub, FaLinkedin, FaWhatsapp, FaXTwitter } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaWhatsapp, FaTwitter } from "react-icons/fa";
 import { CgProfile } from "react-icons/cg";
 import Typewriter from "typewriter-effect";
 
 function Intro() {
   return (
-    <div className="relative h-screen flex flex-col justify-center items-center bg-[#424d56] text-primary-text shadow-2xl">
+    <div className="relative h-screen flex flex-col justify-center items-center bg-[#ffb7d7] text-primary-text shadow-2xl">
       <div className="intro-content text-center text-[#ffffff] text-4xl md:text-6xl mb-24">
         <Typewriter
           options={{
@@ -31,7 +31,7 @@ function Intro() {
           <FaWhatsapp className="text-2xl text-accent4 group-hover:text-accent1 transition duration-300" />
         </a>
         <a href="#" className="group" aria-label="Twitter">
-          <FaXTwitter className="text-2xl text-accent1 group-hover:text-accent2 transition duration-300" />
+          <FaTwitter className="text-2xl text-accent1 group-hover:text-accent2 transition duration-300" />
         </a>
       </div>
     </div>

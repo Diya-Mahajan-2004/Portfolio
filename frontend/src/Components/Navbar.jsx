@@ -5,7 +5,7 @@ function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="navbar flex items-center justify-between flex-wrap bg-[#1b232a] p-5 shadow-2xl">
+    <nav className="navbar flex items-center justify-between flex-wrap bg-[#ffffe4] p-5 shadow-2xl">
 
       <div className="block lg:hidden">
         <button
@@ -20,10 +20,10 @@ function Navbar() {
       </div>
       <div className={`w-full lg:flex lg:items-center lg:w-auto ${isOpen ? "" : "hidden"}`}>
         <div className="text-md lg:flex-grow font-semibold">
-          <NavLink href="/" text="Home" className="mr-8 hover:text-[#0f3460] hover:bg-[#0f3460] text-[#012a4a] hover:bg-opacity-25 hover:py-1 hover:px-4 hover:rounded-lg" />
-          <NavLink href="/about" text="About" className="mr-8 hover:text-[#0f3460] hover:bg-[#0f3460] text-[#012a4a] hover:bg-opacity-25 hover:py-1 hover:px-4 hover:rounded-lg" />
-          <NavLink href="/skills" text="Skills" className="mr-8 hover:text-[#0f3460] hover:bg-[#0f3460] text-[#012a4a] hover:bg-opacity-25 hover:py-1 hover:px-4 hover:rounded-lg" />
-          <NavLink href="/projects" text="Projects" className="hover:text-[#0f3460] hover:bg-[#0f3460] text-[#012a4a] hover:bg-opacity-25 hover:py-1 hover:px-4 hover:rounded-lg" />
+          <NavLink href="/" text="Home" className="mr-8 hover:text-[#0f3460] hover:bg-[#f981b7] text-[#f981b7] hover:bg-opacity-25 hover:py-1 hover:px-4 hover:rounded-lg" />
+          <NavLink href="/about" text="About" className="mr-8 hover:text-[#0f3460] hover:bg-[#f981b7] text-[#f981b7] hover:bg-opacity-25 hover:py-1 hover:px-4 hover:rounded-lg" />
+          <NavLink href="/skills" text="Skills" className="mr-8 hover:text-[#0f3460] hover:bg-[#f981b7] text-[#f981b7] hover:bg-opacity-25 hover:py-1 hover:px-4 hover:rounded-lg" />
+          <NavLink href="/projects" text="Projects" className="hover:text-[#0f3460] hover:bg-[#f981b7] text-[#f981b7] hover:bg-opacity-25 hover:py-1 hover:px-4 hover:rounded-lg" />
         </div>
       </div>
       <button className="text-[#ffffff] bg-[#012a4a] border-[#012a4a] border-4 py-1 px-6 rounded-md mt-0 mr-8 hover:bg-[#ffffff] hover:text-[#012a4a]">
@@ -34,7 +34,7 @@ function Navbar() {
 }
 
 const NavLink = ({ href, text, className }) => (
-  <a href={href} className={`block lg:inline-block lg:mt-0 text-[#eaeaea] px-4 py-2 transition duration-300 ease-in-out ${className}`}>
+  <a href={href} className={`block lg:inline-block lg:mt-0 bg-[#ffffe4] text-[#f981b7] px-4 py-2 transition duration-300 ease-in-out ${className}`}>
     {text}
   </a>
 );
