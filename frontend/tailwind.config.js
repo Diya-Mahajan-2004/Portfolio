@@ -7,10 +7,10 @@ export default {
   theme: {
     extend: {
       colors: {
-        accent1: '#F56565', // Example colors
-        accent2: '#ED64A6',
-        accent3: '#68D391',
-        accent4: '#4FD1C5',
+        accent1: '	#1c3464', 
+        accent2: '#034569',
+        accent3: '	#235b79',
+        accent4: '#086ca2',
         'primary-text': '#E2E8F0',
       },
 

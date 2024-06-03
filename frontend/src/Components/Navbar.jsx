@@ -20,13 +20,13 @@ function Navbar() {
       </div>
       <div className={`w-full lg:flex lg:items-center lg:w-auto ${isOpen ? "" : "hidden"}`}>
         <div className="text-md lg:flex-grow font-semibold">
-          <NavLink href="/" text="Home" className="mr-8 hover:text-[#0f3460] hover:bg-[#f981b7] text-[#f981b7] hover:bg-opacity-25 hover:py-1 hover:px-4 hover:rounded-lg" />
-          <NavLink href="/about" text="About" className="mr-8 hover:text-[#0f3460] hover:bg-[#f981b7] text-[#f981b7] hover:bg-opacity-25 hover:py-1 hover:px-4 hover:rounded-lg" />
-          <NavLink href="/skills" text="Skills" className="mr-8 hover:text-[#0f3460] hover:bg-[#f981b7] text-[#f981b7] hover:bg-opacity-25 hover:py-1 hover:px-4 hover:rounded-lg" />
-          <NavLink href="/projects" text="Projects" className="hover:text-[#0f3460] hover:bg-[#f981b7] text-[#f981b7] hover:bg-opacity-25 hover:py-1 hover:px-4 hover:rounded-lg" />
+          <NavLink href="/" text="Home" className="mr-8 hover:text-[#f975b1] hover:bg-[#f981b7] text-[#f981b7] hover:bg-opacity-25 hover:py-1 hover:px-4 hover:rounded-lg" />
+          <NavLink href="/about" text="About" className="mr-8 hover:text-[#f975b1] hover:bg-[#f981b7] text-[#f981b7] hover:bg-opacity-25 hover:py-1 hover:px-4 hover:rounded-lg" />
+          <NavLink href="/skills" text="Skills" className="mr-8 hover:text-[#f975b1] hover:bg-[#f981b7] text-[#f981b7] hover:bg-opacity-25 hover:py-1 hover:px-4 hover:rounded-lg" />
+          <NavLink href="/projects" text="Projects" className="hover:text-[#f975b1] hover:bg-[#f981b7] text-[#f981b7] hover:bg-opacity-25 hover:py-1 hover:px-4 hover:rounded-lg" />
         </div>
       </div>
-      <button className="text-[#ffffff] bg-[#012a4a] border-[#012a4a] border-4 py-1 px-6 rounded-md mt-0 mr-8 hover:bg-[#ffffff] hover:text-[#012a4a]">
+      <button className="bg-[#f981b7] text-[#ffffca]  border-[#f981b7] border-4 py-1 px-6 rounded-md mt-0 mr-8 hover:bg-[#ffffe4] hover:text-[#012a4a]">
         Hire Me
       </button>
     </nav>

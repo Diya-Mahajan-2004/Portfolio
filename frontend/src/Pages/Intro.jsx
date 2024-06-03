@@ -14,24 +14,23 @@ function Intro() {
             loop: true,
           }}
         />
-        
       </div>
-      <div className="absolute bottom-12 mb-14 flex flex-col items-center space-y-4">
+      <div className="absolute bottom-12 right-12 mb-14 flex flex-col space-y-4">
         <div className="w-0.5 h-24 bg-primary-text mb-4"></div>
         <a href="https://github.com/Diya-Mahajan-2004" className="group" aria-label="GitHub">
-          <FaGithub className="text-2xl text-accent1 group-hover:text-accent2 transition duration-300" />
+          <FaGithub className="text-3xl text-accent1 group-hover:text-9xl  transition duration-300" />
         </a>
         <a href="https://www.linkedin.com/in/diya-mahajan-11948b21b/" className="group" aria-label="LinkedIn">
-          <FaLinkedin className="text-2xl text-accent2 group-hover:text-accent3 transition duration-300" />
+          <FaLinkedin className="text-3xl text-accent2 group-hover:text-9xl transition duration-300" />
         </a>
         <a href="#" className="group" aria-label="Profile">
-          <CgProfile className="text-2xl text-accent3 group-hover:text-accent4 transition duration-300" />
+          <CgProfile className="text-3xl text-accent3 group-hover:text-9xl transition duration-300" />
         </a>
         <a href="https://wa.me/yourphonenumber" className="group" aria-label="WhatsApp">
-          <FaWhatsapp className="text-2xl text-accent4 group-hover:text-accent1 transition duration-300" />
+          <FaWhatsapp className="text-3xl text-accent4 group-hover:text-9xl transition duration-300" />
         </a>
         <a href="#" className="group" aria-label="Twitter">
-          <FaTwitter className="text-2xl text-accent1 group-hover:text-accent2 transition duration-300" />
+          <FaTwitter className="text-3xl text-accent1 group-hover:text-9xl transition duration-300" />
         </a>
       </div>
     </div>
