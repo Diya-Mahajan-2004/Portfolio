@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { FaFlag, FaLaptopCode, FaTrophy, FaReact, FaBullseye, FaPalette } from 'react-icons/fa';
-import Navbar from "../Components/Navbar";
+import NavbarOther from '../Components/NavbarOther';
+import "../CSS/About.css";
 
 function About() {
   const timelineEvents = [
@@ -48,16 +49,23 @@ function About() {
     },
   ];
 
+  const [activeEvent, setActiveEvent] = useState(null);
+
   return (
     <div>
-      <Navbar />
-      <div className="about-page p-10 bg-gradient-to-r from-[#0f0f0f] to-[#2b2b2b] text-[#ffffff] min-h-screen flex justify-center items-center">
+      <NavbarOther />
+      <div className="about-page bg-gray-900 text-white min-h-screen flex justify-center items-center relative">
         <div className="max-w-lg">
-          <h1 className="text-5xl mb-8 text-center font-bold">My Journey</h1>
+          <h1 className="text-5xl mb-8 text-center mt-5 font-bold">My Journey</h1>
           <div className="timeline relative">
             {timelineEvents.map((event, index) => (
-              <div key={index} className="timeline-event flex items-start mb-8">
-                <div className="timeline-icon bg-white text-[#667EEA] rounded-full p-3 shadow-lg mr-4">
+              <div 
+                key={index} 
+                className={`timeline-event flex items-start mb-8 ${activeEvent === index ? 'active' : ''}`}
+                onMouseEnter={() => setActiveEvent(index)}
+                onMouseLeave={() => setActiveEvent(null)}
+              >
+                <div className="timeline-icon bg-gray-400 text-gray-900 rounded-full p-3 shadow-lg mr-4">
                   {event.icon}
                 </div>
                 <div className="flex flex-col">

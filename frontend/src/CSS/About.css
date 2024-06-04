@@ -1,0 +1,91 @@
+/* About.css */
+
+.retro-font {
+    font-family: 'Retro Font', cursive; /* Use a retro-style font */
+}
+
+.retro-shadow {
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* Add a subtle retro shadow */
+}
+
+.timeline-event {
+    position: relative; /* Set position to relative for absolute positioning of glitch effect */
+}
+
+.timeline-event::before {
+    content: ''; /* Create a pseudo-element for glitch effect */
+    position: absolute; /* Position the pseudo-element absolutely */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: repeating-linear-gradient(
+        rgba(0, 0, 0, 0.1) 0,
+        rgba(0, 0, 0, 0.1) 5px,
+        transparent 6px,
+        transparent 12px
+    ); /* Glitch effect background */
+    animation: glitch 6s infinite; /* Apply glitch animation */
+    pointer-events: none; /* Ensure the pseudo-element doesn't interfere with mouse events */
+    z-index: -1; /* Push the pseudo-element behind the content */
+}
+
+@keyframes glitch {
+    0% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    25% {
+        opacity: 0.9;
+        transform: translateX(-4px);
+    }
+    50% {
+        opacity: 0.8;
+        transform: translateX(4px);
+    }
+    75% {
+        opacity: 0.9;
+        transform: translateX(-4px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.timeline-event:hover::before {
+    animation: glitch-hover 2s infinite;
+    cursor: pointer; /* Apply glitch animation on hover */
+}
+
+@keyframes glitch-hover {
+    0% {
+        opacity: 1;
+        transform: translateX(1);
+    }
+    25% {
+        opacity: 0.9;
+        transform: translateX(-4px);
+    }
+    50% {
+        opacity: 0.8;
+        transform: translateX(4px);
+    }
+    75% {
+        opacity: 0.9;
+        transform: translateX(-4px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(1);
+    }
+}
+
+.about-page {
+    background-color: #444444; /* Dark gray color */
+}
+
+.navbar {
+    background-color: #444444; /* Match the navbar background color with the page */
+    /* Add any additional styling for the navbar */
+}
