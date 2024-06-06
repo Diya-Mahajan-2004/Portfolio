@@ -25,7 +25,7 @@ function About() {
     },
     {
       date: '2024',
-      title: 'Hackathon Participation',
+      title: 'Hackathons',
       description: 'I joined forces with fellow enthusiasts in hackathons, fostering teamwork and innovation while tackling real-world challenges.',
       icon: <FaTrophy />,
     },
@@ -56,7 +56,7 @@ function About() {
       <NavbarOther />
       <div className="about-page bg-gray-900 text-white min-h-screen flex justify-center items-center relative">
         <div className="max-w-lg">
-          <h1 className="text-5xl mb-8 text-center mt-5 font-bold">My Journey</h1>
+          <h1 className="text-5xl mb-8 text-center mt-5 font-bold retro-font retro-shadow">My Journey</h1>
           <div className="timeline relative">
             {timelineEvents.map((event, index) => (
               <div 
@@ -70,8 +70,8 @@ function About() {
                 </div>
                 <div className="flex flex-col">
                   <div className="timeline-date text-xl mb-2">{event.date}</div>
-                  <h2 className="text-xl mb-2 font-semibold">{event.title}</h2>
-                  <p>{event.description}</p>
+                  <h2 className="text-xl mb-2 font-semibold retro-font retro-shadow">{event.title}</h2>
+                  <p className="retro-shadow">{event.description}</p>
                 </div>
               </div>
             ))}

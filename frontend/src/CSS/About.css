@@ -1,91 +1,206 @@
 /* About.css */
 
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+/* Retro style font */
 .retro-font {
-    font-family: 'Retro Font', cursive; /* Use a retro-style font */
+    font-family: 'Press Start 2P', cursive;
 }
 
+/* Text shadow for retro feel */
 .retro-shadow {
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* Add a subtle retro shadow */
+    text-shadow: 6px 2px 5px rgba(198, 9, 107, 0.7);
 }
 
-.timeline-event {
-    position: relative; /* Set position to relative for absolute positioning of glitch effect */
+.about-page {
+    background: radial-gradient(circle, #1a2a3a, #000000); /* Dark gradient background */
+    color: #ecf0f1; /* Light text color */
+    padding: 2rem;
+    position: relative;
+    overflow: hidden;
+    background: radial-gradient(circle, #34495e 0%, #2c3e50 100%);
+    filter: contrast(1) brightness(0.6);
+    animation: tv-static 1s infinite;
 }
 
-.timeline-event::before {
-    content: ''; /* Create a pseudo-element for glitch effect */
-    position: absolute; /* Position the pseudo-element absolutely */
+.about-page::before {
+    content: '';
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     background: repeating-linear-gradient(
-        rgba(0, 0, 0, 0.1) 0,
-        rgba(0, 0, 0, 0.1) 5px,
+        to bottom,
+        rgba(255, 255, 255, 0.1) 0,
+        rgba(255, 255, 255, 0.1) 5px,
         transparent 6px,
         transparent 12px
-    ); /* Glitch effect background */
-    animation: glitch 6s infinite; /* Apply glitch animation */
-    pointer-events: none; /* Ensure the pseudo-element doesn't interfere with mouse events */
-    z-index: -1; /* Push the pseudo-element behind the content */
+    );
+    animation: vertical-glitch 6s infinite;
+    pointer-events: none;
+    z-index: -1;
 }
+
 
 @keyframes glitch {
     0% {
-        opacity: 1;
-        transform: translateX(0);
+      transform: translateX(0);
     }
-    25% {
-        opacity: 0.9;
-        transform: translateX(-4px);
+    20% {
+      transform: translateX(-2px); /* Increase glitch translation */
     }
-    50% {
-        opacity: 0.8;
-        transform: translateX(4px);
+    40% {
+      transform: translateX(10px); /* Increase glitch translation */
     }
-    75% {
-        opacity: 0.9;
-        transform: translateX(-4px);
+    60% {
+      transform: translateX(-2px); /* Increase glitch translation */
+    }
+    80% {
+      transform: translateX(10px); /* Increase glitch translation */
     }
     100% {
-        opacity: 1;
-        transform: translateX(0);
+      transform: translateX(0);
     }
-}
-
-.timeline-event:hover::before {
-    animation: glitch-hover 2s infinite;
-    cursor: pointer; /* Apply glitch animation on hover */
-}
-
-@keyframes glitch-hover {
+  }
+  
+  .tv-background:hover::after {
+    animation: glitch-hover 0.5s infinite; /* Adjust glitch-hover animation duration */
+  }
+  
+  @keyframes glitch-hover {
     0% {
-        opacity: 1;
-        transform: translateX(1);
+      transform: translateX(0);
     }
-    25% {
-        opacity: 0.9;
-        transform: translateX(-4px);
+    20% {
+      transform: translateX(-10px); /* Increase glitch-hover translation */
     }
-    50% {
-        opacity: 0.8;
-        transform: translateX(4px);
+    40% {
+      transform: translateX(10px); /* Increase glitch-hover translation */
     }
-    75% {
-        opacity: 0.9;
-        transform: translateX(-4px);
+    60% {
+      transform: translateX(-10px); /* Increase glitch-hover translation */
+    }
+    80% {
+      transform: translateX(10px); /* Increase glitch-hover translation */
     }
     100% {
-        opacity: 1;
-        transform: translateX(1);
+      transform: translateX(0);
     }
+  }
+
+
+/* Timeline styles */
+.timeline {
+    position: relative;
+    padding: 2rem 0;
 }
 
-.about-page {
-    background-color: #444444; /* Dark gray color */
+.timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 2px;
+    height: 100%;
+    background-color: #ecf0f1; /* Light color for timeline line */
+    transform: translateX(-50%);
 }
 
-.navbar {
-    background-color: #444444; /* Match the navbar background color with the page */
-    /* Add any additional styling for the navbar */
+.timeline-event {
+    position: relative;
+    width: 50%;
+    padding: 1rem 2rem;
+    box-sizing: border-box;
+    transition: transform 0.6s ease-in-out, background-color 0.6s ease-in-out;
+    cursor: pointer;
+}
+
+.timeline-event:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    transform: scale(1.05);
+    
+}
+
+.timeline-event:nth-child(odd) {
+    left: 0;
+    text-align: left;
+    font:bold;
+}
+
+.timeline-event:nth-child(even) {
+    left: 50%;
+    text-align: left;
+    transform: translateX(10%);
+    font:bold;
+}
+
+.timeline-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background-color: #95a5a6; /* Light background for icons */
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.timeline-event:nth-child(odd) .timeline-icon {
+    right: -35px;
+}
+
+.timeline-event:nth-child(even) .timeline-icon {
+    left: -35px;
+}
+
+.timeline-date {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.timeline-event h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.timeline-event p {
+    font-size: 1rem;
+}
+
+.active {
+    color: #ff6347;
+}
+
+.hire-btn {
+    background-color: #34495e; /* Button background color */
+    color: #ecf0f1; /* Button text color */
+    border: 2px solid #ecf0f1; /* Button border */
+    padding: 8px 16px; /* Button padding */
+    border-radius: 5px; /* Button border radius */
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s; /* Smooth transition on hover */
+}
+
+.hire-btn:hover {
+    background-color: #e74c3c; /* Change button background color on hover */
+    color: #ecf0f1; /* Change button text color on hover */
+    transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
+/* For small screens */
+@media (max-width: 768px) {
+    .timeline-event {
+        width: 100%;
+        left: 0 !important;
+        text-align: left !important;
+        transform: none !important;
+    }
+
+    .timeline-event .timeline-icon {
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+    }
 }
